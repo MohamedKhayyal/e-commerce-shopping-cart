@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>shopping Cart</title>
+  </head>
+  <body>
+    <div class="cart"><p class="close btn btn-danger">Close</p></div>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="era-logo.png" alt="" width="200" /></a>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            id="searchBox"
+            class="form-control"
+            placeholder="Search product..."
+            oninput="searchProduct()"
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="product">
+          <div class="basket">
+            <i class="fa-solid fa-cart-shopping" onclick="showCart()"></i>
+            <span class="num">0</span>
+          </div>
+        </div>
+      </header>
+      <section></section>
+      <footer>
+        <div class="imgeContent">
+          <img src="era-logo.png" alt="" width="200" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex alias
+            possimus sapiente
+          </p>
+        </div>
+        <div class="info">
+          <div class="page">
+            <h4>Our Pages</h4>
+            <p>product list</p>
+            <p>shopping cart</p>
+            <p>About Us</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="contact">
+            <h4>Contact Us</h4>
+            <p>Email: khayyalmohamed5@gmail.com</p>
+            <p>phone: 01018743096t</p>
+            <p>Address: cairo Egypt</p>
+            <p></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+  </body>
+</html>
